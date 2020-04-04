@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kuning"
+    >
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"
+        />
+
+
+    <EditText
+        android:id="@+id/edtTxtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+       android:hint="Username"
+        android:textSize="@dimen/txt_dua"
+        android:paddingRight="@dimen/dim_dua"
+        android:paddingLeft="@dimen/dim_dua"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginLeft="@dimen/dim_tiga"
+        android:layout_marginRight="@dimen/dim_tiga"
+        android:paddingTop="@dimen/dim_dua"
+        android:paddingBottom="@dimen/dim_dua"
+        android:textColor="@color/hitam"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/kotak_lengkung_putih"
+
+        />
+
+
+
+
+    <EditText
+
+        android:inputType="textPassword"
+        android:id="@+id/edtTxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtUsername"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/txt_dua"
+        android:paddingRight="@dimen/dim_dua"
+        android:paddingLeft="@dimen/dim_dua"
+        android:layout_marginTop="@dimen/dim_satu"
+        android:layout_marginLeft="@dimen/dim_tiga"
+        android:layout_marginRight="@dimen/dim_tiga"
+        android:paddingTop="@dimen/dim_dua"
+        android:paddingBottom="@dimen/dim_dua"
+
+        android:textColor="@color/hitam"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/kotak_lengkung_putih"
+        android:hint="Password"
+         />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/kotak_lengkung_merah"
+        android:textSize="@dimen/txt_dua"
+        android:paddingRight="@dimen/dim_empat"
+        android:paddingLeft="@dimen/dim_empat"
+        android:layout_marginTop="@dimen/dim_satu"
+        android:layout_marginLeft="@dimen/dim_tiga"
+        android:layout_marginRight="@dimen/dim_tiga"
+        android:paddingTop="@dimen/dim_dua"
+        android:paddingBottom="@dimen/dim_dua"
+        android:text="MASUK"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/kinerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/kominfo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="Kabupaten Kotawaringin Barat"
+
+        android:textColor="@color/hitam"
+        android:textSize="@dimen/txt_satu"
+
+        />
+    <TextView
+        android:id="@+id/kominfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tahun"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Dinas Komunikasi dan Informatika"
+        android:textColor="@color/hitam"
+        android:textSize="@dimen/txt_satu"
+
+        />
+    <TextView
+        android:id="@+id/tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="2019"
+        android:textColor="@color/hitam"
+        android:textSize="@dimen/txt_satu"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
