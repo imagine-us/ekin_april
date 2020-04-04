@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_satu">8dp</dimen>
+    <dimen name="dim_dua">16dp</dimen>
+    <dimen name="dim_tiga">24dp</dimen>
+    <dimen name="dim_empat">32dp</dimen>
+    <dimen name="dim_lima">40dp</dimen>
+    <dimen name="txt_satu">8sp</dimen>
+    <dimen name="txt_dua">16sp</dimen>
+    <dimen name="txt_tiga">24sp</dimen>
+    <dimen name="txt_empat">32sp</dimen>
+</resources>

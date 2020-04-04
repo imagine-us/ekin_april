@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/putih">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_marginTop="@dimen/dim_dua"
+                android:layout_marginLeft="@dimen/dim_dua"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/iconEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mdi_menu"
+                android:layout_marginTop="@dimen/dim_dua"
+                android:layout_marginRight="@dimen/dim_dua"
+                android:layout_gravity="end"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/kunig_lengkung_atas">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:background="@drawable/kotak_lengkung_putih"
+        android:padding="@dimen/dim_tiga"
+        android:layout_marginLeft="@dimen/dim_lima"
+        android:layout_marginRight="@dimen/dim_lima"
+        android:gravity="center"
+        >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageProfil"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:src="@drawable/johndow" />
+
+            <TextView
+                android:id="@+id/namaProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="ini tempatnya nama"
+                android:textSize="@dimen/txt_dua"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dim_dua"
+                />
+
+            <TextView
+                android:id="@+id/nipProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="105060800111031"
+                android:textSize="@dimen/txt_dua"
+                android:layout_marginTop="@dimen/dim_satu"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconPresensi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/mdi_edit_location"
+        android:padding="@dimen/dim_dua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.6"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="Presensi"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/iconPresensi"
+        app:layout_constraintLeft_toLeftOf="@id/iconPresensi"
+        app:layout_constraintTop_toBottomOf="@id/iconPresensi"
+        />
+
+    <ImageView
+        android:id="@+id/iconPekerjaan"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/mdi_work"
+        android:padding="@dimen/dim_dua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="Pekerjaan"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/iconPekerjaan"
+        app:layout_constraintLeft_toLeftOf="@id/iconPekerjaan"
+        app:layout_constraintTop_toBottomOf="@id/iconPekerjaan"
+        />
+
+    <ImageView
+        android:id="@+id/iconTpp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/mdi_attach_money"
+        android:padding="@dimen/dim_dua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="TPP"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/iconTpp"
+        app:layout_constraintLeft_toLeftOf="@id/iconTpp"
+        app:layout_constraintTop_toBottomOf="@id/iconTpp"
+        />
+
+    <!-- bawah -->
+
+    <ImageView
+        android:id="@+id/iconMonitoring"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/mdi_monitor"
+        android:padding="@dimen/dim_dua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+    <TextView
+        android:id="@+id/txtMonitoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="Monitoring"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/iconMonitoring"
+        app:layout_constraintLeft_toLeftOf="@id/iconMonitoring"
+        app:layout_constraintTop_toBottomOf="@id/iconMonitoring"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="Pekerjaan Bawahan"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/txtMonitoring"
+        app:layout_constraintLeft_toLeftOf="@id/txtMonitoring"
+        app:layout_constraintTop_toBottomOf="@id/txtMonitoring"
+        />
+
+    <ImageView
+        android:id="@+id/iconPengaduan"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/mdi_record_voice_over"
+        android:padding="@dimen/dim_dua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="Pengaduan"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/iconPengaduan"
+        app:layout_constraintLeft_toLeftOf="@id/iconPengaduan"
+        app:layout_constraintTop_toBottomOf="@id/iconPengaduan"
+        />
+
+    <ImageView
+        android:id="@+id/iconAgenda"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ellipse"
+        android:src="@drawable/mdi_event_note"
+        android:padding="@dimen/dim_dua"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_dua"
+        android:text="Agenda"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@id/iconAgenda"
+        app:layout_constraintLeft_toLeftOf="@id/iconAgenda"
+        app:layout_constraintTop_toBottomOf="@id/iconAgenda"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
