@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_primary"
+    android:padding="@dimen/dim_tiga">
+
+    <ImageView
+        android:id="@+id/btnBackDetailPresensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        />
+
+    <TextView
+        android:id="@+id/txtDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:textSize="@dimen/txt_empat"
+        android:fontFamily="@font/roboto_black"
+        android:layout_marginTop="@dimen/dim_empat"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presensi"
+        android:textSize="@dimen/txt_empat"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetail"
+        />
+
+    <TextView
+            android:id="@+id/txtKeteranganDetailPresensi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Absensi Datang"
+            android:textSize="@dimen/txt_dua"
+            android:fontFamily="@font/roboto_black"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/dim_dua"
+            />
+    <TextView
+        android:id="@+id/txtWaktuDetailPresensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="18-04-2020   18:00:00"
+        android:textSize="@dimen/txt_dua"
+        android:fontFamily="@font/roboto_black"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dim_satu"
+        />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_satu"
+            android:background="@drawable/kotak_lengkung_merah"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dim_satu"
+            />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/kotak_lengkung_putih_tih"
+    android:layout_marginTop="@dimen/dim_satu"
+    android:layout_marginBottom="@dimen/dim_tujuh"
+    >
+
+    <FrameLayout
+        android:id="@+id/mapDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+
+

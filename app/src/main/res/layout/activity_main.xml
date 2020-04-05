@@ -18,23 +18,23 @@
             android:layout_weight="2"
             >
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
                 android:src="@drawable/logo"
                 android:layout_marginTop="@dimen/dim_dua"
                 android:layout_marginLeft="@dimen/dim_dua"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
+
                 />
 
-            <ImageView
+            <androidx.appcompat.widget.Toolbar
+
                 android:id="@+id/iconEditProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/mdi_menu"
-                android:layout_marginTop="@dimen/dim_dua"
+                android:layout_marginTop="@dimen/dim_satu"
                 android:layout_marginRight="@dimen/dim_dua"
-                android:layout_gravity="end"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 />
@@ -97,11 +97,11 @@
 
     <ImageView
         android:id="@+id/iconPresensi"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ellipse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bunder_lengkung_putih"
         android:src="@drawable/mdi_edit_location"
-        android:padding="@dimen/dim_dua"
+        android:padding="@dimen/dim_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -112,7 +112,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="Presensi"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/iconPresensi"
@@ -122,11 +122,11 @@
 
     <ImageView
         android:id="@+id/iconPekerjaan"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ellipse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bunder_lengkung_putih"
         android:src="@drawable/mdi_work"
-        android:padding="@dimen/dim_dua"
+        android:padding="@dimen/dim_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -138,7 +138,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="Pekerjaan"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/iconPekerjaan"
@@ -148,11 +148,11 @@
 
     <ImageView
         android:id="@+id/iconTpp"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ellipse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bunder_lengkung_putih"
         android:src="@drawable/mdi_attach_money"
-        android:padding="@dimen/dim_dua"
+        android:padding="@dimen/dim_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -164,7 +164,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="TPP"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/iconTpp"
@@ -176,11 +176,11 @@
 
     <ImageView
         android:id="@+id/iconMonitoring"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ellipse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bunder_lengkung_putih"
         android:src="@drawable/mdi_monitor"
-        android:padding="@dimen/dim_dua"
+        android:padding="@dimen/dim_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -193,7 +193,7 @@
         android:id="@+id/txtMonitoring"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="Monitoring"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/iconMonitoring"
@@ -204,7 +204,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="Pekerjaan Bawahan"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/txtMonitoring"
@@ -214,11 +214,11 @@
 
     <ImageView
         android:id="@+id/iconPengaduan"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ellipse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bunder_lengkung_putih"
         android:src="@drawable/mdi_record_voice_over"
-        android:padding="@dimen/dim_dua"
+        android:padding="@dimen/dim_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -230,7 +230,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="Pengaduan"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/iconPengaduan"
@@ -240,11 +240,11 @@
 
     <ImageView
         android:id="@+id/iconAgenda"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/ellipse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bunder_lengkung_putih"
         android:src="@drawable/mdi_event_note"
-        android:padding="@dimen/dim_dua"
+        android:padding="@dimen/dim_tiga"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -256,7 +256,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/txt_dua"
+        android:textSize="@dimen/txt_satu"
         android:text="Agenda"
         android:fontFamily="@font/roboto_medium"
         app:layout_constraintRight_toRightOf="@id/iconAgenda"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/editProfileMenu"
+        android:title="Ganti Foto Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/editNamaMenu"
+        android:title="Ganti Nama Profil"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/editPasswordMenu"
+        android:title="Ganti Password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logoutMenu"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>
