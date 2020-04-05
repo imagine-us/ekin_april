@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_primary"
+    android:padding="@dimen/dim_tiga">
+
+    <ImageView
+        android:id="@+id/btnBackPresensi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Foto Profil"
+        android:textSize="@dimen/txt_empat"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:layout_marginTop="@dimen/dim_empat"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotak_lengkung_putih"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        android:layout_marginLeft="@dimen/dim_enam"
+        android:layout_marginRight="@dimen/dim_enam"
+        android:padding="@dimen/dim_empat">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageEditProfil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/johndow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/namaEditProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="ini tempatnya nama"
+            android:textSize="@dimen/txt_dua"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dim_dua"
+            app:layout_constraintLeft_toLeftOf="@id/imageEditProfil"
+            app:layout_constraintRight_toRightOf="@id/imageEditProfil"
+            app:layout_constraintTop_toBottomOf="@id/imageEditProfil"
+            />
+
+        <TextView
+            android:id="@+id/nipEditProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="105060800111031"
+            android:textSize="@dimen/txt_dua"
+            android:layout_marginTop="@dimen/dim_satu"
+            app:layout_constraintLeft_toLeftOf="@id/namaEditProfil"
+            app:layout_constraintRight_toRightOf="@id/namaEditProfil"
+            app:layout_constraintTop_toBottomOf="@id/namaEditProfil"
+            />
+
+        <ImageView
+            android:id="@+id/tombolGantiProfil"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pluspls"
+            app:layout_constraintTop_toTopOf="@id/imageEditProfil"
+            app:layout_constraintLeft_toLeftOf="@id/imageEditProfil"
+            app:layout_constraintRight_toRightOf="@id/imageEditProfil"
+            app:layout_constraintBottom_toBottomOf="@id/imageEditProfil"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="1"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

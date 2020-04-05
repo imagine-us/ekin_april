@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_primary"
+    android:padding="@dimen/dim_tiga">
+
+    <ImageView
+        android:id="@+id/btnBackEditNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Nama Profil"
+        android:textSize="@dimen/txt_empat"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:layout_marginTop="@dimen/dim_empat"
+        />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Nama Profil Baru:"
+            android:textSize="@dimen/txt_dua"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dim_dua"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            />
+
+    <EditText
+        android:id="@+id/edtNamaBaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Nama baru anda"
+        android:textSize="@dimen/txt_dua"
+        android:paddingRight="@dimen/dim_dua"
+        android:paddingLeft="@dimen/dim_dua"
+        app:layout_constraintVertical_bias="0.27"
+        android:paddingTop="@dimen/dim_dua"
+        android:paddingBottom="@dimen/dim_dua"
+        android:textColor="@color/hitam"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/kotak_lengkung_putih"
+        android:inputType="text"
+        android:maxLines="1"
+        />
+    <Button
+        android:id="@+id/saveGantiNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edtNamaBaru"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/kotak_lengkung_merah"
+        android:textSize="@dimen/txt_dua"
+        android:paddingRight="@dimen/dim_empat"
+        android:paddingLeft="@dimen/dim_empat"
+        android:layout_marginTop="@dimen/dim_tiga"
+        android:paddingTop="@dimen/dim_dua"
+        android:paddingBottom="@dimen/dim_dua"
+        android:text="SIMPAN"
+        android:textColor="@color/putih"
+        android:textStyle="bold"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

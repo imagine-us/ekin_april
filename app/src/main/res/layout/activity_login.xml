@@ -43,7 +43,8 @@
         android:textColor="@color/hitam"
         android:textColorHint="@color/grey"
         android:background="@drawable/kotak_lengkung_putih"
-
+        android:inputType="text"
+        android:maxLines="1"
         />
 
 
