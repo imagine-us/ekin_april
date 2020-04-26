@@ -1,18 +1,18 @@
 package com.wsandsby.ekinnew.retrofit;
 
 import com.wsandsby.ekinnew.model.Absensi.AbsensiModel;
-import com.wsandsby.ekinnew.model.Absensi.CekAbsensi;
-import com.wsandsby.ekinnew.model.Absensi.DoAbsensiModel;
-import com.wsandsby.ekinnew.model.Agenda.AgendaModel;
-import com.wsandsby.ekinnew.model.BasicResponseRetrofit;
-import com.wsandsby.ekinnew.model.Kegiatan.KegiatanModel;
-import com.wsandsby.ekinnew.model.Login.GantiPass;
-import com.wsandsby.ekinnew.model.Login.Login;
-import com.wsandsby.ekinnew.model.Monitoring.BawahanModel;
-import com.wsandsby.ekinnew.model.Pekerjaan.PekerjaanModel;
-import com.wsandsby.ekinnew.model.Pengaduan.PengaduanModel;
-import com.wsandsby.ekinnew.model.Pengaduan.PengaduanTanggapanModel;
-import com.wsandsby.ekinnew.model.Profil.FotoModel;
+import  com.wsandsby.ekinnew.model.Absensi.CekAbsensi;
+import  com.wsandsby.ekinnew.model.Absensi.DoAbsensiModel;
+import  com.wsandsby.ekinnew.model.Agenda.AgendaModel;
+import  com.wsandsby.ekinnew.model.BasicResponseRetrofit;
+import  com.wsandsby.ekinnew.model.Kegiatan.KegiatanModel;
+import  com.wsandsby.ekinnew.model.Login.GantiPass;
+import  com.wsandsby.ekinnew.model.Login.Login;
+import  com.wsandsby.ekinnew.model.Monitoring.BawahanModel;
+import  com.wsandsby.ekinnew.model.Pekerjaan.PekerjaanModel;
+import  com.wsandsby.ekinnew.model.Pengaduan.PengaduanModel;
+import  com.wsandsby.ekinnew.model.Pengaduan.PengaduanTanggapanModel;
+import  com.wsandsby.ekinnew.model.Profil.FotoModel;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;

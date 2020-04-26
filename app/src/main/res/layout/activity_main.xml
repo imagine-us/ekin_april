@@ -29,11 +29,11 @@
                 />
 
             <androidx.appcompat.widget.Toolbar
-
+                android:background="@drawable/mdi_menu"
                 android:id="@+id/iconEditProfile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dim_satu"
+                android:layout_width="@dimen/dim_empat"
+                android:layout_height="@dimen/dim_empat"
+                android:layout_marginTop="@dimen/dim_tiga"
                 android:layout_marginRight="@dimen/dim_dua"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"

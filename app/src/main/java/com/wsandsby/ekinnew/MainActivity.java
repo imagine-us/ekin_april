@@ -20,6 +20,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.squareup.picasso.Picasso;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView presensi, pekerjaan, pengaduan, tpp, monitoring, agenda;
     ImageView profil;
     TextView txtNip, txtNama;
+
     String nip,id,nama;
     private SharedPreferences sp;
 
@@ -40,36 +43,25 @@ public class MainActivity extends AppCompatActivity {
     private static final String FOTO_KEY = "key_foto";
     private static final String KEEP_LOGIN_KEY = "key_keep_login";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         this.sp = this.getSharedPreferences("sp", Context.MODE_PRIVATE);
-        txtNip = findViewById(R.id.nipProfil);
-        txtNama = findViewById(R.id.namaProfil);
-
         nip = this.sp.getString("key_nip",null);
         id = this.sp.getString("key_id",null);
         nama = this.sp.getString("key_nama",null);
+
+        txtNip = findViewById(R.id.nipProfil);
+        txtNama = findViewById(R.id.namaProfil);
 
         txtNip.setText(nip);
         txtNama.setText(nama);
 
         profil = findViewById(R.id.imageProfil);
-//        Picasso.with(this).load("http://tahutekno.com/ekinerja-admin/assets/img/profile/"+this.sp.getString("key_foto",null)).placeholder(R.drawable.icon_profile).transform(new PicassoCircleTransformation()).into(profil);
-        //Picasso.with(this).load("http://tahutekno.com/ekinrest/foto/"+this.sp.getString("key_foto",null)).placeholder(R.drawable.icon_profile).transform(new PicassoCircleTransformation()).into(profil);
-        URL newurl = null;
-        try {
-            newurl = new URL("http://tahutekno.com/ekinrest/foto/"+this.sp.getString("key_foto",null));
-            Bitmap mIcon_val = BitmapFactory.decodeStream(newurl.openConnection().getInputStream());
-            profil.setImageBitmap(mIcon_val);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Picasso.with(this).load("http://tahutekno.com/ekinrest/foto/"+this.sp.getString
+                ("key_foto",null)).placeholder(R.drawable.johndow).into(profil);
 
 
         presensi = findViewById(R.id.iconPresensi);
@@ -95,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,"Fitur belum tersedia", Toast.LENGTH_LONG).show();
-//                startActivity(new Intent(MainActivity.this,PengaduanActivity.class));
 //                startActivity(new Intent(MainActivity.this,PengaduanActivityBaru.class));
             }
         });
@@ -124,24 +115,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                startActivity(new Intent(MainActivity.this,AgendaActivity.class));
-                Toast.makeText(MainActivity.this,"Fitur belum tersedia", Toast.LENGTH_LONG).show();
+                 Toast.makeText(MainActivity.this,"Fitur belum tersedia", Toast.LENGTH_LONG).show();
             }
         });
 
-       Toolbar toolbar = (Toolbar) findViewById(R.id.iconEditProfile);
-       setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        //editprofil = findViewById(R.id.iconEditProfile);
-//        editprofil.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//               startActivity(new Intent(MainActivity.this,EditProfile.class));
-//               // onCreateOptionsMenu()
-//            }
-//        });
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.iconEditProfile);
+        setSupportActionBar(toolbar);
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -155,15 +137,14 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()==R.id.editProfileMenu){
-             //tes karena ganti foto
             finish();
-//            startActivity(new Intent(this, EditProfile.class));
+          //  startActivity(new Intent(this, EditProfile.class));
         } else if (item.getItemId() == R.id.editPasswordMenu) {
-//            startActivity(new Intent(this, GantiPasswordActivity.class));
+           // startActivity(new Intent(this, GantiPasswordActivity.class));
         } else if(item.getItemId() == R.id.editNamaMenu){
-//            startActivity(new Intent(this, GantiNamaActivity.class));
+           // startActivity(new Intent(this, GantiNamaActivity.class));
         }else if (item.getItemId() == R.id.logoutMenu) {
-            showDialogLogout();
+           // showDialogLogout();
         }
         return true;
     }
@@ -208,8 +189,5 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
-    }
+
 }

@@ -40,7 +40,7 @@ public class SplashScreen extends AppCompatActivity {
                 finish();
             }
             //disini maksud 3000 nya itu adalah lama screen ini terdelay 3 detik,dalam satuan mili second
-        }, 3000);
+        }, 2000);
 
 
     }
